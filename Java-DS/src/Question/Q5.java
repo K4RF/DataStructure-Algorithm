@@ -1,25 +1,16 @@
-package Ch1;
-
+package Question;
 import java.util.Scanner;
 
-public class Median {
+public class Q5 {
     static int med3(int a, int b, int c){
-        if(a >= b){
-            if(b >= c)
-                return b;
-            else if(a <= c)
-                return a;
-            else 
-                return c;
-        }
-        else if(a > c)
+        if((b >= a && c <= a) || (b <= a && c >= a)){
             return a;
-        else if(b > c)
-            return c;
-        else
+        }
+        else if((a > b && c < b) || (a < b && c > b)){
             return b;
+        }
+        return c;
     }
-
     public static void main(String[] args){
         Scanner stdIn = new Scanner(System.in);
 
