@@ -1,4 +1,4 @@
-package Question;
+package Ch1.Question;
 
 public class Q1 {
     static int max4(int a, int b, int c, int d){
