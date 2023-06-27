@@ -1,4 +1,4 @@
-package Question;
+package Ch1.Question;
 import java.util.Scanner;
 
 public class Q5 {
