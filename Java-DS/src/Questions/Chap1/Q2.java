@@ -1,4 +1,4 @@
-package Ch1.Question;
+package Questions.Chap1;
 
 public class Q2 {
     static int min3(int a, int b, int c){
