@@ -28,7 +28,6 @@ public class Q6 {
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-
         int no, cd, dno, retry;
         char[] cno = new char[32];
 
@@ -55,5 +54,6 @@ public class Q6 {
             System.out.print("한번 더 할까요?(1. 예/ 0. 아니요): ");
             retry = sc.nextInt();
         }while(retry==1);
+        sc.close();
     }
 }
