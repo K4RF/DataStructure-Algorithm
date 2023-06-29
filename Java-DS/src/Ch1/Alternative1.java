@@ -13,8 +13,7 @@ public class Alternative1 {
             System.out.print("n값: ");
             n = stdIn.nextInt();
         }while(n<= 0);
-        
-        int sum = 0;
+
         for(int i =0; i<n; i++){
             if(i % 2 == 0){
                 System.out.print("+");
