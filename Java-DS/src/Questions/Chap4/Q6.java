@@ -1,5 +1,6 @@
 package Questions.Chap4;
 
+
 public class Q6<E> {
     private E[] que;
     private int capacity;
@@ -7,13 +8,13 @@ public class Q6<E> {
     private int rear;
     private int num;
 
-    public class EmptyQ6Exception extends RuntimeException{
+    public static class EmptyQ6Exception extends RuntimeException{
         public EmptyQ6Exception(){}
     }
 
-    public class OverflowQ6Exception extends RuntimeException{
-        public OverflowQ6Exception(){}
-    }
+    public static class OverflowQ6Exception extends RuntimeException {
+		public OverflowQ6Exception() { }
+	}
 
     public Q6(int maxlen){
         num = front = rear = 0;
