@@ -24,5 +24,6 @@ public class Q2 {
         System.out.print("정수를 입력하세요: "); int y = sc.nextInt();
 
         System.out.println("최대공약수는 " + gcd(x, y) + "입니다.");
+        sc.close();
     }
 }
