@@ -1,6 +1,5 @@
 package Questions.Chap4;
 
-import java.util.EmptyStackException;
 import java.util.Scanner;
 
 import Ch4.IntStack;

@@ -1,7 +1,6 @@
 package Questions.Chap4;
 
 import java.util.Scanner;
-import java.util.Stack;
 
 public class Q2Tester {
     public static void main(String[] args) {
@@ -76,5 +75,6 @@ public class Q2Tester {
 				break;
 			}
 		}
+		stdIn.close();
 	}
 }
