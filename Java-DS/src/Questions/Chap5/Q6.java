@@ -44,6 +44,6 @@ public class Q6 {
 
 		recur3(x);
 
-        stdIn.close();
+		stdIn.close();
 	}
 }
