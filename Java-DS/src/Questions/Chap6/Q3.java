@@ -57,5 +57,7 @@ public class Q3 {
 		System.out.println("오름차순으로 정렬하였습니다.");
 		for (int i = 0; i < nx; i++)
 			System.out.println("x[" + i + "]＝" + x[i]);
+		
+		stdIn.close();
 	}
 }
