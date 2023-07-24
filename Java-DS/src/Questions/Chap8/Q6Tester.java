@@ -3,7 +3,7 @@ package Questions.Chap8;
 import java.util.Comparator;
 import java.util.Scanner;
 
-public class Q3Tester {
+public class Q6Tester {
     static Scanner sc = new Scanner(System.in);
 
 	//--- 데이터(회원번호＋이름) ---//
