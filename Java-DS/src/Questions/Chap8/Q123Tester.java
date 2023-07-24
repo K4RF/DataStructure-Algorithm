@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Comparator;
 
 class Q123Tester{
-    static Scanner stdIn = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
 
 	//--- 데이터(회원번호＋이름) ---//
 	static class Data {
@@ -25,11 +25,11 @@ class Q123Tester{
 
 			if ((sw & NO) == NO) {
 				System.out.print("번호 : ");
-				no = stdIn.nextInt();
+				no = sc.nextInt();
 			}
 			if ((sw & NAME) == NAME) {
 				System.out.print("이름 : ");
-				name = stdIn.next();
+				name = sc.next();
 			}
 		}
 
@@ -101,7 +101,7 @@ class Q123Tester{
 					System.out.println();
 			}
 			System.out.print(" : ");
-			key = stdIn.nextInt();
+			key = sc.nextInt();
 		} while (key < Menu.ADD_FIRST.ordinal() || 
 											key > Menu.TERMINATE.ordinal());
 		return Menu.MenuAt(key);
@@ -178,7 +178,7 @@ class Q123Tester{
 
 			 case RETRIEVE : {						//【연습8-2】특정 노드를 출력
 					System.out.print("머리부터 몇 번째 데이터를 출력할까요? : ");
-					int no = stdIn.nextInt() - 1;
+					int no = sc.nextInt() - 1;
 					ptr = list.retrieve(no);
 					if (ptr == null)
 						System.out.println("그 데이터는 존재하지 않습니다.");
