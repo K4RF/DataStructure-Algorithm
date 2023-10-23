@@ -2,7 +2,7 @@ package Ch8;
 import java.util.Comparator;
 import java.util.Scanner;
 
-public class ArrayLinkedListTester {
+public class ArrayLinkedList1{
     static Scanner sc = new Scanner(System.in);
 
     //--- 데이터(회원번호＋이름) ---//
