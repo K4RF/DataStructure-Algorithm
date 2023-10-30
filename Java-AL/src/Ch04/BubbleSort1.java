@@ -39,6 +39,6 @@ class mData implements Comparable<mData>{
 
     @Override
     public int compareTo(mData o){
-        return this.value = value;
+        return value;
     }
 }
