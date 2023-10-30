@@ -29,5 +29,7 @@ public class SelectSort {
         for(int i = 0; i < str.length(); i++){
             System.out.print(A[i]);
         }
+
+        sc.close();
     }
 }
