@@ -33,5 +33,6 @@ public class MeetingRoom {
             }
         }
         System.out.println(count);
+        sc.close();
     }
 }
