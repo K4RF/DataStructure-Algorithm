@@ -23,5 +23,6 @@ public class CardSort {
             pq.add(data1 + data2);
         }
         System.out.println(sum);
+        sc.close();
     }
 }

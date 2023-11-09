@@ -21,5 +21,6 @@ public class LowestCoin {
             }
         }
         System.out.println(count);
+        sc.close();
     }
 }

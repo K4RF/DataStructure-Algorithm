@@ -25,5 +25,6 @@ public class KthNumber {
             }
         }
         System.out.println(ans);
+        sc.close();
     }
 }
