@@ -23,5 +23,6 @@ public class PrimeNumber {
                 System.out.println(A[i]);
             }
         }
+        sc.close();
     }
 }
