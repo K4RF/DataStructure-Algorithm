@@ -31,6 +31,7 @@ public class Pelinedrome {
             }
             i++;
         }
+        sc.close();
     }
 
     private static boolean isPalindrome(int target){
