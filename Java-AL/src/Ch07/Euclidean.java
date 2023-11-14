@@ -12,6 +12,7 @@ public class Euclidean {
             int result = a*b/ gcd(a, b);
             System.out.println(result);
         }
+        sc.close();
     }
 
     public static int gcd(int a, int b){
