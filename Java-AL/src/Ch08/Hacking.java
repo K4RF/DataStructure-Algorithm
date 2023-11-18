@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.nio.Buffer;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -16,7 +15,7 @@ public class Hacking {
     static int answer[];
     static ArrayList<Integer> A[];
 
-    public static void main(String[] args){
+    public static void main(String[] args)throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st = new StringTokenizer(br.readLine());
