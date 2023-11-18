@@ -2,7 +2,9 @@ package Ch08;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class FindCity {
@@ -49,12 +51,13 @@ public class FindCity {
                 System.out.println(temp);
             }
         }
+        sc.close();
     }
 
     private static void BFS(int Node){
         Queue<Integer> queue = new LinkedList<Integer>();
         queue.add(Node);
-        visited[Node]++
+        visited[Node]++;
         while(!queue.isEmpty()){
             int now_Node = queue.poll();
             for(int i : A[now_Node]){

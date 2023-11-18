@@ -58,7 +58,7 @@ public class Graph {
             }
 
             else if(check[node] == check[i]){
-                IsEven = fasle;
+                IsEven = false;
             }
         }
     }
