@@ -13,7 +13,7 @@ public class Plan {
 
         int[][] dosi = new int[N + 1][N + 1];
 
-        for(int i = 1; j <= N; i++){
+        for(int i = 1; i <= N; i++){
             for(int j = 1; j <= N; j++){
                 dosi[i][j] = sc.nextInt();
             }
@@ -39,9 +39,8 @@ public class Plan {
                 return;
             }
         }
-
-        System.out.println("YES");
         sc.close();
+        System.out.println("YES");
     }
 
     public static void union(int a, int b){
