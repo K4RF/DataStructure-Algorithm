@@ -51,7 +51,7 @@ public class Liar {
             }
             if(isPossible) result++;
         }
-        System.out.println(result)
+        System.out.println(result);
 
         sc.close();
     }
