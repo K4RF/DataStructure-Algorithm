@@ -6,10 +6,10 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.nio.Buffer;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-import org.w3c.dom.Node;
 
 public class lowestCost {
     static int N,M;
