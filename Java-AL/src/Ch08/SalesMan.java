@@ -12,7 +12,7 @@ public class SalesMan {
     private static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static int N, M, sCity, eCity;
     static long distance[], cityMoney[];
-    static Edge edges[];
+    static Edges Edgess[];
 
     public static void main(String[] args)throws Exception{
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -21,7 +21,7 @@ public class SalesMan {
         eCity = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
 
-        edges = new Edge[M];
+        Edgess = new Edges[M];
         distance = new long[N];
         cityMoney = new long[N];
         Arrays.fill(distance, Long.MIN_VALUE);
@@ -30,7 +30,7 @@ public class SalesMan {
             int start = Integer.parseInt(st.nextToken());
             int end = Integer.parseInt(st.nextToken());
             int price = Integer.parseInt(st.nextToken());
-            edges[i] = new Edge(start, end, price);
+            Edgess[i] = new Edges(start, end, price);
         }
         st = new StringTokenizer(br.readLine());
         for(int i = 0; i < N; i++){
@@ -41,9 +41,9 @@ public class SalesMan {
 
         for(int i = 0; i <= N + 100; i++){
             for(int j = 0; j < M; j++){
-                int start = edges[j].start;
-                int end = edges[j].end;
-                int price = edges[j].price;
+                int start = Edgess[j].start;
+                int end = Edgess[j].end;
+                int price = Edgess[j].price;
 
                 if(distance[start] == Long.MIN_VALUE) continue;
                 else if(distance[start] == Long.MAX_VALUE) distance[end] = Long.MAX_VALUE;
@@ -59,9 +59,9 @@ public class SalesMan {
     }
 }
 
-class Edge{
+class Edges{
     int start, end, price;
-    public Edge(int start, int end, int price){
+    public Edges(int start, int end, int price){
         this.start = start;
         this.end = end;
         this.price = price;
