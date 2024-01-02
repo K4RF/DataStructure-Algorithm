@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 N(수열 개수) maxlength(최대 길이 저장 변수), A[](수열 데이터 저장하기), ans[](정답 수열 저장하기)
 D[](0 ~ i까지 i를 포함하는 최장 증가 수열의 길이 저장하기), B[](현재 가장 유리한 증가 수열 저장하기)
 수열 데이터를 입력받아 A 배열에 값 저장하기
@@ -28,4 +29,37 @@ binarySearch(l, r, row){
         B[중앙값]이 now보다 크거나 같으면 r값을 중앙값으로 변경
     }
     l값을 리턴하기
+=======
+N(선분의 개수)
+parent[] (선분들의 부모 선분 저장 노드 배열), L[][](선분 저장 배열)
+ans(선분 그룹 수), res(가장 큰 선분 그룹의 선분 수를 음수로 저장하는 변수)
+for(i -> 1 ~ N) parent 배열을 모두 -1로 초기화
+for(i -> 1 ~ N){
+    신규 선분 저장하기
+    for(j -> 1 ~ i){
+        신규 선분과 현재까지 저장된 선분이 교차되는지 확인
+        선분이 교차할 때 두 선분은 1개의 그룹으로 저장하기
+    }
+}
+
+for(i -> 1 ~ N){
+    if(parent[i]의 값이 음수이면){
+        ans++(선분 그룹 수 증가)
+        res = Math.min(res, parnet[i])
+    }
+}
+
+ans 출력하기, ~res 출력하기
+
+find(i){
+    if(parent[i]가 음수) return if
+    return parent[i] = find(parent[i]);
+}
+
+union(i, j){
+    p = find(i), q = find(j)
+    if(p == q) return
+    parent[p] += parent[q]
+    parent[q] = p
+>>>>>>> 9ce84ca7aa214eb3832c62126bee97ee73434ef4
 }
